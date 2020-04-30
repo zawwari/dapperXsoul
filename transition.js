@@ -27,28 +27,12 @@ $('.fullpage-nav-list li').mouseleave(function(){
     });
 
 
-$(window).on('load',function(){
-    $("#video-repeat").play();
-});
-    $("#video-repeat").on('ended', function(){
-        this.play();
-   });
-
-$('.emailed').on('focus',function(){
-    $(this).parent().addClass('bring-down');
-    $('.newletter-btn').css("margin-top","30px");
-
-    $('.emailed').focusout(function(){
-        $(this).parent().removeClass('bring-down',200);
-        $('.newletter-btn').css("margin-top","0px");
-});
    
 });
 
 $('.searchbar').on('click',function(){
 
 $('.searchbar input[type=text]') .toggleClass('searchbar-show');
-});
 });
 
 
