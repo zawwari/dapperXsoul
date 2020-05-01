@@ -24,7 +24,7 @@ display:table;
 header{
     padding-top: 30px;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100%;
     position: relative;
 }
 
@@ -192,10 +192,11 @@ text-transform: uppercase;
 .header-biased-banner{
    z-index: 2;
    position: absolute;
-  left:50%;
-   top: 50%;
+text-align: center;   
+top: 50%;
+left: 50%;
 transform: translate(-50%,-50%);
-
+padding: 0px 30px;
 width: 100%;
 }
 
@@ -468,7 +469,7 @@ background-color: black;
     bottom: 0px;
     right: 0px;}
 .gl-container {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding:0px 30px;
 }
@@ -548,8 +549,9 @@ text-transform: uppercase;
 position: relative;
 text-decoration: none;
 font-weight: bold;
-min-width: 200px;
+width: 250px;
 text-align: center;
+max-width: 100%;
 }
 .text-wrapper .btn-cta{
 border: 2px solid #000000;
@@ -591,6 +593,7 @@ width:100%;
 text-align: center;
 opacity: 0;
 transition: all 0.5s;
+padding: 0px 20px;
 
 }
 .pic-wrapper a:hover:after{
@@ -621,7 +624,7 @@ letter-spacing: 7px;;
 
 .text-wrapper{
 flex-basis:40%;
-padding-right: 20px;
+padding-right: 30px;
 }
 
  h3{
@@ -730,8 +733,16 @@ top:0;
 top:-50%;
 }
 .vans-section .text-wrapper{
-    padding-left: 20px;
+    padding-left: 30px;
 }
+.psychelic-shirt-sec .text-wrapper {
+
+    padding:0px 0px 0px 30px;
+
+}
+
+
+
 .table-display{
     display:table-cell;
     vertical-align: middle;
@@ -1011,9 +1022,6 @@ letter-spacing: 2px;
 text-align: center;
 }
 .about-me-desc{
-
-
-
     margin-top: 120px;
 }
 
@@ -1043,7 +1051,12 @@ padding: 170px 0px;
 .set-section{
     padding-bottom: 0px!important;
 }
-
+.vans-section .text-wrapper{
+    padding-right: 0px;
+}
+.cta-btn .btn-cta{
+    margin-right: 50px;
+}
 
 @media screen and (max-width:1024px){
     .services-wrapper{
@@ -1052,14 +1065,26 @@ padding: 170px 0px;
     .services-section{
         padding-bottom: 100px;
     }
+
+    .second-col{
+        display:none;   }
+
+
+        .left-nav-footer{
+            flex-basis: 50%;
+        }
+        .left-nav-footer
+{
+
+    padding: 60px 30px;
+}
+
+
 }
 
 
 @media screen and (max-width:767px){
-
-
     .service-content-wrapper{
-
 flex-direction: column;
     }
     .service-content-wrapper.suited{
@@ -1073,29 +1098,106 @@ flex-direction: column;
         margin-top: 30px;
     }
 
-    .services-section{
-        padding: 50px 0px;
-    }
-    .second-col{
-display:none;
-    }
+
     .left-nav-footer{
         flex-basis: 50%;
     }
 
     .left-nav-footer {
-        padding: 50px 20px ;
+        padding: 50px 20px;
     }
     .footer-nav{
-
-
 flex-direction: column;
-
     }
-
     .text-wrapper .btn-cta{
         margin-right: 0px;
     }
+.gl-container{
+    padding:0px 15px;
+}
+.text-wrapper{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.psychelic-shirt-sec .text-wrapper{
+    padding:0px;
+}
+.vans-section .text-wrapper{
+ padding-left: 0px;   
+}
+.services-section {
+    padding-bottom: 60px;
+}
+.services-wrapper{
+    padding: 60px 0px;
+}
 
+
+h1, .h1 {
+    font-size: 75px;
+letter-spacing: 10px;
+line-height: 1.2;
+    }
+
+    .x::before{
+height: 150px;
+}
+.x::after{
+    
+height: 150px;}
+
+.x{
+
+    height: 150px;
+}
+
+.cta-btn .btn-cta{
+    margin-top: 30px;
+    display: block;
+width: 100%;}
+
+.fullpage-nav-list li a{
+    font-size: 35px;
+}
+
+
+.logo a img{
+    width: 100px;
+}
+.cta-btn{
+    margin-top: 40px;
+}
+ 
+}
+@media screen and (max-width:480px){
+
+.btn-cta{
+    width: 100%;
+}
+h1, .h1 {
+    font-size: 50px;
+letter-spacing: 0px;
+    }
+    .x{
+        height: 100px;
+    }
+    .x:before{
+height: 100px;
+
+
+    }
+
+    .x:after{
+        height: 100px;
+        
+        
+            }
+            .header-biased-banner{
+margin-top: 40px;
+                padding: 0px 15px;
+            }
+header{
+    padding-top: 20px;
+}
 
 }
