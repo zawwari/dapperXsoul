@@ -112,7 +112,9 @@ opacity: 1 !important;
     padding-bottom: 50px;
 }
 .portfolio-recog1{
-text-align: center;
+text-align: center
+
+;
 }
 .large-text{
  color: #ffffff;  
@@ -126,14 +128,14 @@ transform-origin: left;
 transition: all 0.5s;
 }
 
-.large-text[data-scroll="in"]
+h1.large-text[data-scroll="in"]
 {
 transform: scaleX(1);
 }
-.large-text[data-scroll="out"]{
+h1.large-text[data-scroll="out"]{
     transform: scaleX(0);
 }
-.large-text[data-scroll]{
+h1.large-text[data-scroll]{
     transition: transform 0.5s;
 }
 
@@ -1016,6 +1018,7 @@ font-size: 80px;
 text-align: left;
 line-height: 1.5;
 letter-spacing: 2px;
+transform: translateX(0);
 }
 
 .portfolio-recog1 {
