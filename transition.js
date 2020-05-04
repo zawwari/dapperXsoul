@@ -10,12 +10,12 @@ $
     });
     $(window).scroll(function() {
         
-        var $dots=$(".fixed-right-dots span");
+        var $dots=$(".name-text");
 
-        if ($(window).scrollTop() > 518){
-$dots.addClass('dotchange');
+        if ($(window).scrollTop() > 100){
+$dots.addClass('same-text');
         }
-        else {($dots.removeClass('dotchange',500));
+        else {($dots.removeClass('same-text',100));
     }
        
     });
