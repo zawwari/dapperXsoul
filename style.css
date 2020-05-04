@@ -1204,19 +1204,17 @@ display:block;
 .name-text{
     left: 0px;
     top: 70%;
+    transform: translateX(0);
 }
 .name-text h3{
     font-size: 80px;
 }
 
-.name-text{
-    transform: translateX(0);
-}
- 
 }
 @media screen and (max-width:480px){
     h3 {
         font-size: 45px !important;
+        letter-spacing:10px !important;
     }
     .logo a img{
         width: 70px;
