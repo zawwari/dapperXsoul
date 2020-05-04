@@ -1202,11 +1202,15 @@ width: 100%;}
 display:block;
 }
 .name-text{
-    left: 20px;
-    top: 50%;
+    left: 0px;
+    top: 70%;
 }
 .name-text h3{
     font-size: 80px;
+}
+
+.name-text{
+    transform: translateX(0);
 }
  
 }
