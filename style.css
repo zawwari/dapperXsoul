@@ -133,7 +133,6 @@ position: absolute;
 content: "";
 width:100%;
 height:100%;
-background-color: grey;
 top:0;
 right:0;
 transition: all 1s;
@@ -817,7 +816,9 @@ transition: all 0.5s;
 max-width:300px;
 width:100%;
 }
-
+.subscribe-input input[type="email"]:active{
+    background-color: transparent;
+}
 
 .subscribe-input input[type="email"]:not(:focus){
 
@@ -935,6 +936,7 @@ font-weight: 500;
 color: #000000;
 cursor: pointer;
 transition: all 0.5s;
+background-color: transparent;
 }
 
 .about-body{
@@ -961,7 +963,6 @@ box-shadow: -1px -1px 20px 4px #b7aeae;
 .pic-container img{
 
     height: 750px;
-    width: 571px;
 }
 
 .name-text h3{
@@ -1103,9 +1104,16 @@ padding: 170px 0px;
     background-color: #000;
 }
 
-
-
-
+.footer-contact-wrap .logo{
+    display: none;
+    margin-top: 30px;
+}
+.footer-contact-wrap h5{
+    display:none;
+}
+.footer-contact-wrap .subscribe-input{
+    display:none;
+}
 
 
 
@@ -1192,8 +1200,20 @@ height: 8px;
 
         margin-top: 30px;
     }
+    .footer-contact-wrap .logo{
+        display: block;
+    }
+    .footer-contact-wrap h5{
+        display:block;
+    }
+    .footer-contact-wrap .subscribe-input{
+        display:block;
+    }
 
+    .third-col{
 
+        display:none;
+    }
     .left-nav-footer{
         flex-basis: 50%;
     }
@@ -1209,6 +1229,7 @@ flex-direction: column;
     }
 .gl-container{
     padding:0px 15px;
+    margin: 0 auto;
 }
 .text-wrapper{
     padding-right: 0px;
@@ -1293,6 +1314,11 @@ display:block;
     .logo a img{
         width: 70px;
 
+    }
+
+
+    .newletter-btn{
+        font-size: 16px;
     }
     .name-text h3{
         font-size: 40px !important;
