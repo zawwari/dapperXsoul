@@ -680,6 +680,7 @@ transform-origin: left;
 .pic-wrapper:hover:before{
     transform: scaleX(1); 
     transition: all 0.4s ;
+    opacity: 1;
 }
 
 .pic-wrapper::after{
@@ -695,6 +696,8 @@ transform-origin: left;
     transform: scaleY(0);
     transition: all 0.4s ease-in-out;
     transform-origin:center;
+    background-color: #000;
+    opacity: 0;
 
 }
 .pic-wrapper:hover:after{
