@@ -389,7 +389,7 @@ body {
 
 .service-content-wrapper {
     display: flex;
-    align-items: top;
+    align-items:flex-start;
     justify-content: center;
     flex-direction: row;
 
