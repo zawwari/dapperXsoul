@@ -1350,7 +1350,7 @@ opacity: 0;
    }
    .skills-wrapper span.is-inview{
     opacity: 1;
-transition:all 0.5s;
+transition:all 0.5s ease-out 0.2s;
 transform: translateX(0vh)
    }
    .skills-wrapper a{
