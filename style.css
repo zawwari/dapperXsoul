@@ -1297,6 +1297,66 @@ h6 {
 
 
 }
+[data-scroll]{
+transition: all 0.5s;
+}
+
+.who-am-i.is-inview{
+   transform: translateY(0px) !important;
+   transition: all 0.9s ease-in-out!important;
+   opacity: 1 !important;
+   transform-origin: left !important;
+}
+   .who-am-i{
+    transform: translatey(500px);
+    transition: all 0.9s ease-in-out;
+    opacity: 0;
+    transform-origin: left;
+   }
+
+   .about-wrappe{
+opacity: 0;
+transition:opacity transform  0.5s linear 0.5s;
+transform: translateY(700px);
+   }
+   .about-wrappe.is-inview{
+    transition:opacity transform 0.5s linear 0.5s !important;
+    opacity: 1 !important;
+    transform: translateY(0px);
+   }
+
+   .skills-list li{
+       opacity: 0;
+       transition: all 0.5s ease-out;
+   }
+   .skills-list li.is-inview{
+
+opacity: 1;
+transition:opacity 0.5s ease-in-out 0.5s;
+
+   }
+
+   .skills-wrapper {
+       text-align: center;
+   }
+
+   .skills-wrapper span{
+font-size: 60px;
+margin-top: 80px;
+font-family: montserrat;
+display: block;
+transform: translateX(100vh);
+opacity: 0;
+   }
+   .skills-wrapper span.is-inview{
+    opacity: 1;
+transition:all 0.5s;
+transform: translateX(0vh)
+   }
+   .skills-wrapper a{
+       text-decoration: none;
+
+   }
 
 @media screen and (max-width:1024px) {
     .about-page-wrapper h3 {

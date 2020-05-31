@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.4.1.min.js.download"></script>
+    <link rel="stylesheet" href="locomotive-scroll-master/dist/locomotive-scroll.css">
 </head>
 
 <body class="about-body hide">
@@ -40,8 +41,8 @@
                 </div>
 
             </div>
-            <div class="about-wrappe">
-                <div class="name-text" id="scroller-test">
+            <div class="about-wrappe" data-scroll data-scroll-repeat="true" data-scroll-speed="1">
+                <div class="name-text">
                     <h3>Zawwar</h3>
                     <h3>Mehboob</h3>
                 </div>
@@ -54,54 +55,30 @@
             </div>
 
             <div class="what-i-do-wrapper">
-                <div class="portfolio-recog1">
+                <div class="portfolio-recog1" >
+                    <div class="who-am-i"  data-scroll data-scroll-repeat="true">
                     <h1 class="large-text"> WHO </h1>
                     <div class="about-me-desc">
                         <h3>I'm Zawwar Mehboob a fashion
                              blogger & web developer having mastered the art of 
                                 creating tantalizing webpages.
                     </div>
-
+                </div>
                     <div class="skills-wrapper">
                         <h1 class="large-text">skills</h1>
 <ul class="skills-list">
-    <li>UI/UX</li>
-    <li>Freelancing</li>
-    <li>WEB DEV</li>
-    <li>PHOTOGRAPHY</li>
+    <li data-scroll data-scroll-speed="1" data-scroll-repeat="true">UI/UX</li>
+    <li data-scroll data-scroll-speed="2" data-scroll-repeat="true">Freelancing</li> 
+    <li data-scroll data-scroll-speed="3" data-scroll-repeat="true">WEB DEV</li>
+    <li data-scroll  data-scroll-speed="4" data-scroll-repeat="true">PHOTOGRAPHY</li>
 </ul>
-
-
 
                     </div>
                 </div>
                 <div class="contact skills-wrapper">
-
                     <h1 class="large-text">contact me</h1>
-
-
-
-
-
-
-
-
-
-
-
+                  <a href="https://www.instagram.com/zawwar_ahmed1/"><span data-scroll>@zawwar_ahmed1</span></a>  
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
 
@@ -112,7 +89,15 @@
     </div>
     </div>
     </div>
-  
+
+
+    <script src="locomotive-scroll-master/dist/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
+    </script>
+  </body>
 
 
 </html>
