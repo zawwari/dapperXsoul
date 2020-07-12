@@ -68,6 +68,7 @@ header {
     transition: bottom 300ms ease-out 300ms, right 300ms ease-out 300ms;
 }
 
+
 .searchbar span:before,
 .searchbar span:after {
     position: absolute;
@@ -101,23 +102,35 @@ padding: 10px 30px 10px 10px;
     opacity: 0;
 }
 .searchbar input[type="text"]:focus::placeholder{
-
-
 opacity:1;
 }
-
 
 .searchbar input[type="text"]:focus + span{
     bottom: 8px;
     right: 10px;
     transition: bottom 300ms ease-out 800ms,right 300ms ease-out 800ms;
 }
+.about-page-wrapper .searchbar input[type="text"]:focus + span{
+    bottom: 8px;
+    right: 10px;
+    transition: bottom 300ms ease-out 800ms,right 300ms ease-out 800ms;
+}
+
+
 .searchbar input[type="text"]:focus + span::after{
 top:0px;
 right: 4px;
 opacity: 1;
 transition:top 300ms ease-out 800ms, opacity 300ms ease-out 1100ms, right 300ms ease-in-out 800ms;
 }
+
+.about-page-wrapper .searchbar input[type="text"]:focus + span::after{
+    top:0px;
+    right: 4px;
+    opacity: 1;
+    transition:top 300ms ease-out 800ms, opacity 300ms ease-out 1100ms, right 300ms ease-in-out 800ms;
+    }
+
 .searchbar {
     position: relative;
     z-index: 4;
@@ -126,6 +139,19 @@ transition:top 300ms ease-out 800ms, opacity 300ms ease-out 1100ms, right 300ms 
     border: 2px solid #ffffff;
     border-radius: 50px;
 }
+
+.about-page-wrapper .searchbar {
+    border: 2px solid #000000;
+}
+
+.about-page-wrapper span:after{
+    border-left: 2px solid #000000;  
+  }
+
+  .about-page-wrapper span:before{
+    border-left: 2px solid #000000;  
+  }
+
 .active .searchbar{
 border: 2px solid #000000;
 }
@@ -225,7 +251,7 @@ color: #000000;
 }
 
 .skills-wrapper {
-    margin-top: 100px;
+    margin-top: 72px;
 }
 
 
@@ -1151,7 +1177,7 @@ h6 {
 }
 
 .about-wrappe {
-    padding: 80px 0px 200px 0px;
+    padding: 80px 0px 100px 0px;
 }
 
 .desc p {
@@ -1173,10 +1199,10 @@ font-family: 'Circular',sans-serif;
 
 .portfolio-recog1 h3 {
     color: #000000;
-    font-family:'Circular',sans-serif;
+    font-family:'montserrat';
     display: block;
     max-width: 100%;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 80px;
     text-align: left;
     line-height: 1.5;
@@ -1192,7 +1218,7 @@ font-family: 'Circular',sans-serif;
 }
 
 .about-me-desc {
-    margin-top: 120px;
+    margin-top: 72px;
 }
 
 
@@ -1386,7 +1412,7 @@ transition:opacity 0.5s ease-in-out 0.5s;
 
    .skills-wrapper span{
 font-size: 60px;
-margin-top: 80px;
+margin-top: 50px;
 font-family: montserrat;
 display: block;
 transform: translateX(100vw);
