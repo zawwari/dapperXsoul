@@ -4,14 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family:'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url('https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'bebas_neueregular';
+    font-family:'bebas_neueregular';
     src: url('/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
         url('/fonts/bebasneue-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -1401,6 +1401,40 @@ transform: translateX(0vw);
        text-decoration: none;
 
    }
+   .scroll-icon{
+       position: fixed;
+       bottom: 50px;
+       display: block;
+       background-image: url('../img/scroll-icon.png');
+       background-size: cover;
+       height: 40px;
+       width: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    animation: animate 2s infinite 0.2s ease-in-out; 
+    }
+@keyframes animate{
+0%{
+transform: scale(1);
+}
+50%{
+
+    transform: scale(1.2);
+}
+ 75%{
+
+    transform: scale(1);
+ }
+
+100%{
+transform: scale(1.2);
+}
+}
+
+
+
+
    @media screen and (max-width:1205px){
 
     .skills-list li{
