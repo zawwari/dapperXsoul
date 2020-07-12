@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2') format('woff2');
 }
 @font-face {
     font-family: 'bebas_neueregular';
@@ -506,27 +506,24 @@ a {
     position: absolute;
     content: "";
     height: 100%;
-    width: 0%;
+    width: 100%;
     background-color: black;
     top: 0;
-    left: auto;
-    right: 0;
+    transform: translateY(100%);
+    left:0;
     z-index: -1;
-    transition: width 0.5s cubic-bezier(0.615, 0.19, 0.305, 0.91) 0s;
-    ;
+    transition: all 0.5s cubic-bezier(0.615, 0.19, 0.305, 0.91) 0s;
+    opacity:0;
 }
 
 .fullpage-nav-list li a:hover {
-    transform: skewX(-10deg);
     transition: transform 0.4s;
     color: #ffffff;
 }
 
 .fullpage-nav-list li a:hover:before {
-    width: 100%;
-    transform: skewX(10deg);
-    left: 0;
-    background-color: black;
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 .fullpage-nav-list li a:hover .images-container-hidden {
@@ -1479,11 +1476,8 @@ width: 30px;
     .pic-wrapper{
     height: 50vw;
     }
-  
-
     .pic-container img {
         width: 100%;
-        height: auto;
     }
     .skills-list li:before {
         height: 20px;
