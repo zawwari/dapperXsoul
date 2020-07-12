@@ -9,7 +9,6 @@
     font-weight: 400;
     font-display: swap;
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 @font-face {
     font-family: 'bebas_neueregular';
@@ -127,6 +126,23 @@ transition:top 300ms ease-out 800ms, opacity 300ms ease-out 1100ms, right 300ms 
     border: 2px solid #ffffff;
     border-radius: 50px;
 }
+.active .searchbar{
+border: 2px solid #000000;
+}
+
+.active span:after{
+  border-left: 2px solid #000;  
+}
+.active span:before{
+border-left: 2px solid #000;
+}
+
+.active .searchbar input[type="text"] {
+color: #000000;
+}
+
+
+
 .searchbar:focus{
     border:none;
 }
@@ -1112,8 +1128,7 @@ h6 {
 }
 
 .pic-container img {
-
-    height: 750px;
+    height: 70vw;
 }
 
 .name-text h3 {
