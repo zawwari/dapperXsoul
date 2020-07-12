@@ -1833,8 +1833,11 @@ width: 220px;
 
     .x:after {
         height: 100px;
+    }
 
-
+    .skills-wrapper span{
+        font-size:25px;
+    }
     }
 
     .header-biased-banner {
