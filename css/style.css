@@ -1386,11 +1386,11 @@ transition: all 0.5s;
 
    .about-wrappe{
 opacity: 0;
-transition:opacity transform  0.5s linear 0.5s;
+transition:all  0.5s linear 0.5s;
 transform: translateY(700px);
    }
    .about-wrappe.is-inview{
-    transition:opacity transform 0.5s linear 0.5s !important;
+    transition:all 0.5s linear 0.5s !important;
     opacity: 1 !important;
     transform: translateY(0px);
    }
@@ -1476,9 +1476,24 @@ width: 30px;
    }
 
 @media screen and (max-width:1024px) {
+
+    .about-me-desc{
+        margin-top: 60px;
+    }
+
+    .skills-wrapper{
+        margin-top: 60px;
+    }
+
     .about-page-wrapper h3 {
         font-size: 60px !important;
-        letter-spacing: 10px;
+        letter-spacing: 0px;
+    }
+
+    .name-text h3{
+letter-spacing: 10px;
+
+
     }
     .skills-list li:before {
         height: 25px;
@@ -1490,13 +1505,15 @@ width: 30px;
         padding-left:50px;
     }
     .about-row-wrapper {
-
         margin-top: -70px;
-
     }
 
-    .about-wrappe {
-        padding: 80px 0px 150px 0px;
+    .about-wrappe{
+        padding: 60px 0px 60px 0px ;
+    }
+
+    .skills-list{
+        margin-top: 60px;
     }
 
     .large-text {
@@ -1504,7 +1521,7 @@ width: 30px;
     }
 
     .services-wrapper {
-        padding: 100px 0px;
+        margin-top:50px;
     }
 
     .services-section {
@@ -1530,14 +1547,45 @@ width: 30px;
 
 
 @media screen and (max-width:767px) {
+
+    .footer-contact-wrap .subscribe-input{
+
+        margin-top: 40px;
+    }
+
+    .about-wrappe{
+        padding: 40px 0px 40px 0px;
+    }
+
+    .skills-wrapper{
+        margin-top: 40px;
+    }
+
+    .skills-list{margin-top: 40px;}
+
+    .about-me-desc{
+        margin-top: 40px;
+    }
+
+    .skills-wrapper{
+        margin-top: 40px;
+    }
+
+    .skills-wrapper span{
+        margin-top: 40px;
+    }
+    .footer-contact-wrap{
+        margin-top: 40px;
+    }
+
+    .header-biased-banner .h1{
+        font-size: 70px;
+    }
     .service-content-wrapper {
         flex-direction: column;
     }
     .pic-wrapper{
     height: 50vw;
-    }
-    .pic-container img {
-        width: 100%;
     }
     .skills-list li:before {
         height: 20px;
@@ -1548,11 +1596,7 @@ width: 30px;
         font-size: 50px;
         padding-left:35px;
     }
-    .about-wrappe {
-        padding: 60px 0px 150px 0px;
-    }
-
-
+   
     .large-text {
         font-size: 70px;
     }
@@ -1684,10 +1728,6 @@ width: 30px;
         transform: skewX(0);
     }
 
-    .about-row-wrapper {
-        display: block;
-    }
-
     .name-text {
         left: 0px;
         top: 70%;
@@ -1696,6 +1736,10 @@ width: 30px;
 
     .name-text h3 {
         font-size: 80px;
+    }
+
+    .skills-wrapper span{
+        font-size: 30px;
     }
 
 }
@@ -1734,6 +1778,10 @@ width: 220px;
         letter-spacing: 10px !important;
     }
 
+    .header-biased-banner .h1{
+        font-size: 50px;
+    }
+
     .logo a img {
         width: 70px;
 
@@ -1755,10 +1803,6 @@ width: 220px;
         font-size: 45px;
     }
 
-
-    .skills-wrapper span{
-        font-size: 45px;
-    }
     .about-row-wrapper {
         margin-top: -35px;
     }
@@ -1766,11 +1810,6 @@ width: 220px;
     .about-page-wrapper h3 {
         font-size: 40px !important;
     }
-
-    .about-wrappe {
-        padding: 30px 0px 100px 0px;
-    }
-
 
     .btn-cta {
         width: 100%;
