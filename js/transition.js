@@ -40,10 +40,5 @@ $(document).ready(function() {
 
 
 
-    })
-
-
-
-
-}
+    });
 });
