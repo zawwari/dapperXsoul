@@ -29,8 +29,4 @@ $(document).ready(function() {
         fadeOut: false,
         fadeOutDelay: 500
     });
-    $('header').vide({
-        loop: true,
-        resize: true
-    });
 });
