@@ -31,4 +31,18 @@ $(document).ready(function() {
         fadeOutDelay: 500
 
     });
+    $('header').vide({
+
+        loop: true,
+
+
+
+
+
+    })
+
+
+
+
+}
 });
