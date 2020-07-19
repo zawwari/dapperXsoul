@@ -27,18 +27,10 @@ $(document).ready(function() {
         loop: true,
         backSpeed: 100,
         fadeOut: false,
-        fadeOutClass: 'typed-fade-out',
         fadeOutDelay: 500
-
     });
     $('header').vide({
-
         loop: true,
         resize: true
-
-
-
-
-
     });
 });
