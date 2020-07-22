@@ -63,7 +63,67 @@
         }
         
         body {
-            cursor: ;
+            cursor: none;
+            overflow-x: hidden;
+        }
+        
+        .cursor {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            border: 3px solid #f5ae0a;
+            transition-duration: 200ms;
+            transition-timing-function: ease-out;
+            animation: pulse 1s infinite alternate;
+        }
+        
+        .cursor::after {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            border: 8px solid #f5af0aa8;
+            border-radius: 50%;
+            animation: secondpulse 1s infinite alternate;
+            top: -11px;
+            left: -11px;
+        }
+        
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(0.7);
+            }
+        }
+        
+        @keyframes secondpulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(0.4);
+            }
+        }
+        
+        .click-event {
+            border: 3px solid rgb(0, 0, 0);
+            animation: clickbeh forwards 0.5s;
+        }
+        
+        @keyframes clickbeh {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(3);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
         }
         
         .header-biased-banner .soul {
@@ -346,6 +406,7 @@
         .header-biased-banner {
             text-align: center;
             position: relative;
+            z-index: 2;
         }
         
         .header-biased-banner .h1 {

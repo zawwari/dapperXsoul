@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/footer-logo.png" type="image/x-icon" />
     <link rel="icon" href="img/footer-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/vanilla.js"></script>
     <script src="js/jquery-3.4.1.min.js.download"></script>
     <script src="js/typed.js"></script>
     <script src="js/jquery.vide.js"></script>
@@ -15,6 +16,7 @@
 </head>
 
 <body class="hide">
+    <div class="cursor"></div>
     <header id="back" data-vide-bg="img/mango.mp4">
         <div class="gl-container">
             <div class="navbar">
@@ -261,10 +263,19 @@
         </div>
 
     </footer>
+    <script>
+        let mouseScroll = document.querySelector(".cursor");
+        document.addEventListener("mouseover", e => {
+            mouseScroll.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+        document.addEventListener('click', () => {
+            mouseScroll.classList.add('click-event');
+            setTimeout(() => {
+                mouseScroll.classList.remove('click-event');
+            }, 500);
 
-
-
-
+        })
+    </script>
 </body>
 
 </html>
