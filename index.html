@@ -22,11 +22,11 @@
             <div class="navbar">
                 <div class="fullpage-nav">
                     <ul class="fullpage-nav-list">
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="about.html"> pORTFOLIO</a></li>
-                        <li><a href="#">MY WORK</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="" data-text="ABOUT">ABOUT</a></li>
+                        <li><a href="# " data-text="BLOG">BLOG</a></li>
+                        <li><a href="about.html" data-text="PORTFOLIO"> pORTFOLIO</a></li>
+                        <li><a href="#" data-text="MY WORK">MY WORK</a></li>
+                        <li><a href="" data-text="CONTACT">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="logo">
@@ -79,7 +79,7 @@
                                     <img src="img/sharp-table.jpg" alt="">
                                     <div class="content">
 
-                                        <h3>explore</h3>
+                                        <h3>read more</h3>
 
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                     <img src="img/floral.jpg" alt="">
                                     <div class="content">
 
-                                        <h3>explore</h3>
+                                        <h3>read more</h3>
 
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                     <img src="img/beard.jpg" alt="">
                                     <div class="content">
 
-                                        <h3>explore</h3>
+                                        <h3>read more</h3>
 
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@
                                     <img src="img/vans.jpg" alt="">
                                     <div class="content">
 
-                                        <h3>explore</h3>
+                                        <h3>read more</h3>
 
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@
                                     <img src="img/couture.jpg" alt="me">
                                     <div class="content">
 
-                                        <h3>explore</h3>
+                                        <h3>read more</h3>
 
 
                                     </div>
@@ -264,17 +264,30 @@
 
     </footer>
     <script>
-        let mouseScroll = document.querySelector(".cursor");
-        document.addEventListener("mouseover", e => {
-            mouseScroll.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-        })
-        document.addEventListener('click', () => {
-            mouseScroll.classList.add('click-event');
-            setTimeout(() => {
-                mouseScroll.classList.remove('click-event');
-            }, 500);
+        // let mouseScroll = document.querySelector(".cursor");
+        // let navSelector = document.querySelectorAll('.fullpage-nav-list li a');
+        // document.addEventListener('mouseover', cursor);
 
-        })
+        // function cursor(e) {
+        //     mouseScroll.style.top = e.pageY + "px";
+        //     mouseScroll.style.left = e.pageX + "px";
+        // }
+        // navSelector.forEach(link => {
+        //     link.addEventListener('mouseover', () => {
+        //         mouseScroll.classList.add('styler');
+        //     })
+
+        //     link.addEventListener('mouseleave', () => {
+        //         mouseScroll.classList.remove('styler');
+        //     });
+
+        // })
+
+        // document.addEventListener('click', () => {
+        //     mouseScroll.classList.add('click-event');
+        //     setTimeout(() => {
+        //         mouseScroll.classList.remove('click-event');
+        //     }, 500);
     </script>
 </body>
 
